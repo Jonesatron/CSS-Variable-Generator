@@ -39,10 +39,10 @@ Initialise the function with your chosen arguments.
 createVariables(baseColor = '#45a59c', variableName = 'colorPrimary');
 ```
 
-If you check the HTML element on your project you should now have 7 CSS Variables appended and ready to use in you project. 
+If you check the HTML element on your project you should now have 7 CSS Variables appended and ready to use in your project. 
 
 ## Naming Conventions
---${baseColor}-100 is the lightest variation and its 75% lighter. --${baseColor}-400 is the base color. --${baseColor}-700 is the darkest variation and is 75% darker. The variables will have the following names (where the argument 'variableName' is 'colorPrimary' and the 'baseColor' is '#45a59c'' ):
+--${baseColor}-100 is the lightest variation and is 75% lighter than the base color. --${baseColor}-400 is the base color. --${baseColor}-700 is the darkest variation and is 75% darker than the base color. The variables will have the following names (where the argument 'variableName' is 'colorPrimary' and the 'baseColor' is '#45a59c'):
 
 ```css
 :root {
