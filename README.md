@@ -27,7 +27,35 @@ Add a style tag into the head of your project with the ID of 'root-style'
 </html>
 ```
 
-Import the javascript into your proh
+Import the module into your project...
+
+```javascript
+import createVariables from 'css-variable-generator';
+```
+
+Initialise the function with your chosen arguments. 
+
+```javascript
+createVariables(baseColor = '#45a59c', variableName = 'colorPrimary');
+```
+
+If you check the HTML element on your project you should now have 7 CSS Variables appended and ready to use in you project. 
+
+## Naming Conventions
+The variables will have the following names (where the argument 'variableName' is 'colorPrimary'):
+
+```css
+:root {
+    --colorPrimary-100: #d1e9e6;
+    --colorPrimary-200: #a2d2ce;
+    --colorPrimary-300: #74bcb5;
+    --colorPrimary-400: #45a59c;
+    --colorPrimary-500: #347c75;
+    --colorPrimary-600: #23534e;
+    --colorPrimary-700: #112927;
+}
+```
+
 
 ## Example
 https://codepen.io/jonescr/pen/GPeeWM
