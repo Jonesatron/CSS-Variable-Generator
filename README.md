@@ -57,7 +57,7 @@ If you check the HTML element on your project you should now have 7 CSS Variable
 ```
 
 ## Compatibility
-The module works in all major browsers. I have also tested it in IE11 and it works alongside the <a href="https://www.npmjs.com/package/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a>. The css-vars-ponyfill just needs to be initialised after the variables are created.
+The module works in all major browsers. I have also tested it in IE11 and it works alongside the <a href="https://www.npmjs.com/package/css-vars-ponyfill" target="_blank" rel="noopener noreferrer">css-vars-ponyfill</a>. The css-vars-ponyfill just needs to be initialised after the variables are created.
 
 ```js
 import createVariables from 'css-variable-generator';
