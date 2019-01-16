@@ -1,5 +1,5 @@
 # CSS-Variable-Generator
-Generate CSS variables from a base HEX color.
+Generate CSS variables from a base HEX color. Useful for theming websites and creating color palettes.
 
 ## Installation
 
@@ -42,7 +42,7 @@ createVariables(baseColor = '#45a59c', variableName = 'colorPrimary');
 If you check the HTML element on your project you should now have 7 CSS Variables appended and ready to use in you project. 
 
 ## Naming Conventions
-The variables will have the following names (where the argument 'variableName' is 'colorPrimary'):
+--${baseColor}-100 is the lightest variation and its 75% lighter. --${baseColor}-400 is the base color. --${baseColor}-700 is the darkest variation and is 75% darker. The variables will have the following names (where the argument 'variableName' is 'colorPrimary' and the 'baseColor' is '#45a59c'' ):
 
 ```css
 :root {
@@ -56,6 +56,16 @@ The variables will have the following names (where the argument 'variableName' i
 }
 ```
 
+## Compatibility
+The module works in all major browsers. I have also tested it in IE11 and it works alongside the <a href="https://www.npmjs.com/package/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a>. The css-vars-ponyfill just needs to be initialised after the variables are created.
+
+```js
+import createVariables from 'css-variable-generator';
+import cssVars from 'css-vars-ponyfill';
+
+createVariables('#45a59c', 'colorPrimary');
+cssVars();
+```
 
 ## Example
 https://codepen.io/jonescr/pen/GPeeWM
