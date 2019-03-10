@@ -1,6 +1,6 @@
 {
 	"name": "css-variable-generator",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Generate CSS variables from a base HEX color.",
 	"main": "index.js",
 	"scripts": {
